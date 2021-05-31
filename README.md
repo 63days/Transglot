@@ -14,8 +14,10 @@ Install with `pip install -e .`. This implementation is based on some libraries,
 
 CUDA: 11.2
 ## Train
+1. For preprocessing the data, run `transglot/notebooks/prepare_chairs_in_context_data.ipynb`.
+2. Train Transglot
 ```
-# You can select some options. The number of attention layers, heads and point encoder type. 
+# You can select some options. 
 # pn: PointNet, pn2: PointNet++, pt: Point Transformer, pct: Point Cloud Transformer
 python train.py embedding_dim=100 hidden_dim=256 attn_layers=1 num_heads=1 \
 pc_encoder_type=["pn", "pn2", "pt", "pct"] \
@@ -25,7 +27,9 @@ batch_size=96 epochs=35 lr=1e-3 weight_decay=5e-3 \
 ## Test
 `python test.py`
 
-I attached a checkpoint of trained model. 
+I attached a checkpoint of trained model. It runs the uploaded model.
+If you want to test your own trained model, you should edit a sub_dir path in test.py.
+For more details, please refer to comments in that.
 
 trained model: embedding_dim=100, hidden_dim=256, attn_layers=1, num_heads=1, pc_encoder_type=pn
 
