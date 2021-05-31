@@ -1,0 +1,31 @@
+# MAC
+.DS_Store
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# ShapeGlot downloaded data (and/or any derivatives stored her)
+data/*
+=======
+
+# Jupyter.
+transglot/notebooks/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+**/.ipynb_checkpoints/
+
+# Pycharm.
+.idea/*
+
+# Misc.
+*.so
+*.o
+*.swp
+nohup.out
+*.sh
+
+

@@ -1,0 +1,22 @@
+hydra:
+  run:
+    dir: outputs
+
+pc_encoder_type: pn
+embedding_dim: 100
+hidden_dim: 256
+point_output_dim: 256
+num_points: 2048
+epochs: 35
+batch_size: 96
+optimizer: adamw
+lr: 1e-3
+weight_decay: 5e-3
+num_heads: 1
+attn_layers: 1
+
+# For Shapeglot
+pretrained: False
+use_image: False
+
+log: True
