@@ -35,7 +35,7 @@ def main(cfg):
     version_format = datetime.datetime.now().strftime("%m%d-%H:%M")
 
     if hparams["log"]:
-        tb_logger = TensorBoardLogger("logs", version=version_format)
+        tb_logger = TensorBoardLogger("logs", name=None, version=version_format)
         checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor='val_acc',
             mode="max",
