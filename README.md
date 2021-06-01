@@ -13,9 +13,20 @@ It is similar with the part segmentation of the shapes even Transglot isn't prov
 Install with `pip install -e .`. This implementation is built using some libraries, pytorch-lightning and hydra.
 
 CUDA: 11.2
+
+## Usage
+1. To download additional required data, please run the following commands. You first need to accept the Term Of Use
+   [here](https://docs.google.com/forms/d/e/1FAIpQLScyV1AsZsfthqiPhuw6MFL1JZ4p8GSDPIj8uwH0BRWQl3tejw/viewform).
+   Upon review, Shapeglot authors will email to you the necessary link that you need to put inside
+   the designated location of the download_data.sh file.
+   
+   ```
+   sh download_data.sh
+   ```
+2. To tokenize and prepare the ChairinCotext dataset, please run 
+   `transglot/notebooks/prepare_chairs_in_context_data.ipynb`
 ## Train
-1. For preprocessing the data, run `transglot/notebooks/prepare_chairs_in_context_data.ipynb`.
-2. Train Transglot
+
 ```
 # You can select some options. 
 # pn: PointNet, pn2: PointNet++, pt: Point Transformer, pct: Point Cloud Transformer
@@ -57,9 +68,10 @@ As shown the table above, more capability of the architecture increased overfitt
 
 __mIOU(%) scores with the binarized attention map and the ground truth.__
 Each row and column indicates the name of the label inserted as input and an actual part area
-respectively.
+respectively. I also uploaded the code for calculating the IoU in `iou_calculate.ipynb`.
 
 ## Reference
+This code is based on some open sources below.
 * https://github.com/optas/shapeglot
 * https://github.com/erikwijmans/Pointnet2_PyTorch
 * https://github.com/POSTECH-CVLab/point-transformer
