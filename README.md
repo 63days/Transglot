@@ -42,9 +42,9 @@ your own synthesized sentences. (only lowercase available.)
 ### Performance of architectures
 | Architecture | Test Acc (%) | Test Loss | Train Acc (%) |
 | ------------ | -------- | --------- | --------- |
-| Baseline     | 79.5     | 0.6101    | 91.5      |
+| Baseline     | __79.5__     | __0.6101__    | 91.5      |
 | head=1       | 78.0     | 0.6602    | 94.6      |
-| head=8       | 76.0     | 0.9272    | 95.4      |
+| head=8       | 76.0     | 0.9272    | __95.4__      |
 
 As shown the table above, more capability of the architecture increased overfitting.
 ### Part segmentation from language
@@ -64,6 +64,7 @@ respectively.
 * https://github.com/erikwijmans/Pointnet2_PyTorch
 * https://github.com/POSTECH-CVLab/point-transformer
 * https://github.com/MenghaoGuo/PCT
+* https://github.com/chrdiller/pyTorchChamferDistance
 
 ## License
 This provided code is licensed under the terms of the MIT license (see LICENSE for details).
