@@ -40,11 +40,12 @@ your own synthesized sentences. (only lowercase available.)
 
 ## Experiment Results
 ### Performance of architectures
-| Architecture | Test Acc | Test Loss | Train Acc |
+| Architecture | Test Acc (%) | Test Loss | Train Acc (%) |
 | ------------ | -------- | --------- | --------- |
 | Baseline     | 79.5     | 0.6101    | 91.5      |
 | head=1       | 78.0     | 0.6602    | 94.6      |
 | head=8       | 76.0     | 0.9272    | 95.4      |
+
 As shown the table above, more capability of the architecture increased overfitting.
 ### Part segmentation from language
 | Given Word \ Part  | back | seat | leg | arm |
@@ -53,6 +54,7 @@ As shown the table above, more capability of the architecture increased overfitt
 | seat | 40.21 | 20.86 | 3.98  | 7.64  |
 | leg  | 1.35  | 1.49  | 14.93 | 0.83  |
 | arm  | 0.34  | 7.54  | 3.6   | 4.85  |
+
 __mIOU(%) scores with the binarized attention map and the ground truth.__
 Each row and column indicates the name of the label inserted as input and an actual part area
 respectively.
