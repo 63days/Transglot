@@ -58,5 +58,15 @@ As shown the table above, more capability of the architecture increased overfitt
 __mIOU(%) scores with the binarized attention map and the ground truth.__
 Each row and column indicates the name of the label inserted as input and an actual part area
 respectively.
+
+## Reference
+* https://github.com/optas/shapeglot
+* https://github.com/erikwijmans/Pointnet2_PyTorch
+* https://github.com/POSTECH-CVLab/point-transformer
+* https://github.com/MenghaoGuo/PCT
+
 ## License
 This provided code is licensed under the terms of the MIT license (see LICENSE for details).
+
+
+
