@@ -26,6 +26,6 @@ transglot/notebooks/.ipynb_checkpoints/*
 *.o
 *.swp
 nohup.out
-*.sh
+
 
 
