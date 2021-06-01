@@ -68,7 +68,7 @@ As shown the table above, more capability of the architecture increased overfitt
 
 __mIOU(%) scores with the binarized attention map and the ground truth.__
 Each row and column indicates the name of the label inserted as input and an actual part area
-respectively. I also uploaded the code for calculating the IoU in `iou_calculate.ipynb`.
+respectively. I also uploaded the code for calculating IoU in `iou_calculate.ipynb`.
 
 ## Reference
 This code is based on some open sources below.
