@@ -43,7 +43,7 @@ class ShapeglotWithPCDataset(ShapeglotDataset):
     def __init__(self, np_data, num_points=2048, shuffle_geo=False, target_last=False):
         super().__init__(np_data=np_data, shuffle_geo=shuffle_geo, target_last=target_last)
         self.num_points = num_points
-        self.pc_data = h5py.File('./data/shapenet_chairs_only_in_game.h5', 'r')['data'][:,:self.num_points]
+        self.pc_data = h5py.File('../data/shapenet_chairs_only_in_game.h5', 'r')['data'][:,:self.num_points]
 
     def __getitem__(self, index):
         text = self.data['text'][index].astype(np.long)

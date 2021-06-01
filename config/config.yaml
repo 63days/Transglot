@@ -7,6 +7,7 @@ embedding_dim: 100
 hidden_dim: 256
 point_output_dim: 256
 num_points: 2048
+use_tnet: False
 epochs: 35
 batch_size: 96
 optimizer: adamw

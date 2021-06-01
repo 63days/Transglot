@@ -96,7 +96,7 @@ class BaseListener(pl.LightningModule):
         return mat_diff_loss
 
     def prepare_data(self):
-        top_data_dir = './data/main_data_for_chairs'
+        top_data_dir = '../data/main_data_for_chairs'
         data_name='game_data.pkl'
         game_data, word_to_int, int_to_word, int_to_sn_model, sn_model_to_int, sorted_sn_models = \
             unpickle_data(osp.join(top_data_dir, data_name))
