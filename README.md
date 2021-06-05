@@ -14,6 +14,7 @@ Install with `pip install -e .`. This implementation is built using some librari
 
 CUDA: 11.2
 
+Because I couldn't create other virutal envs, I couldn't accurately test whether there are other dependencies. So if you find any others, please mention to me.
 ## Usage
 1. To download the data, please run the following command. You first need to accept the Term Of Use
    [here](https://docs.google.com/forms/d/e/1FAIpQLScyV1AsZsfthqiPhuw6MFL1JZ4p8GSDPIj8uwH0BRWQl3tejw/viewform).
