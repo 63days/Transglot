@@ -30,7 +30,7 @@ Because I couldn't create other virutal envs, I couldn't accurately test whether
    `transglot/notebooks/prepare_chairs_in_context_data.ipynb`
 ## Train
 ### Transglot
-```
+```python
 # You can select some options. 
 # pn: PointNet, pn2: PointNet++, pt: Point Transformer, pct: Point Cloud Transformer
 python train.py embedding_dim=100 hidden_dim=256 attn_layers=1 num_heads=1 \
@@ -38,12 +38,12 @@ pc_encoder_type=["pn", "pn2", "pt", "pct"] \
 batch_size=96 epochs=35 lr=1e-3 weight_decay=5e-3 
 ```
 ### Baseline (Shapeglot)
-```
+```python
 python train_baseline.py
 ```
 ## Test
 ### Transglot
-```
+```python
 python test.py
 ```
 
@@ -54,7 +54,7 @@ For more details, please refer to comments in the test.py.
 trained model (head_1): embedding_dim=100, hidden_dim=256, attn_layers=1, num_heads=1, pc_encoder_type=pn
 trained model (head_8): num_heads=8. Others are the same with above.
 ### Baseline (Shapeglot)
-```
+```python
 python test_baseline.py
 ```
 ## Visualize Attention Maps
