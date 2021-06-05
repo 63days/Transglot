@@ -42,7 +42,9 @@ python train_baseline.py
 ```
 ## Test
 ### Transglot
-`python test.py`
+```
+python test.py
+```
 
 I attached checkpoints of trained models. The above command tests the uploaded models.
 If you want to test your own trained model, you should edit a "sub_ver_dir" path in the test.py.
@@ -50,7 +52,10 @@ For more details, please refer to comments in the test.py.
 
 trained model (head_1): embedding_dim=100, hidden_dim=256, attn_layers=1, num_heads=1, pc_encoder_type=pn
 trained model (head_8): num_heads=8. Others are the same with above.
-
+### Baseline (Shapeglot)
+```
+python test_baseline.py
+```
 ## Visualize Attention Maps
 You can visualize attention maps of Transglot in the `visualization.ipynb`. In that, you can also test 
 your own synthesized sentences. (only lowercase available.)
