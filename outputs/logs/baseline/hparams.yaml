@@ -1,0 +1,17 @@
+pc_encoder_type: pn
+use_attn: true
+embedding_dim: 100
+hidden_dim: 256
+use_tnet: false
+point_output_dim: 256
+num_points: 2048
+epochs: 35
+batch_size: 96
+optimizer: adamw
+lr: 0.001
+weight_decay: 0.005
+num_heads: 1
+word_attn: false
+use_image: false
+pretrained: true
+use_concat: false

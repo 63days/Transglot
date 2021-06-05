@@ -28,7 +28,7 @@ CUDA: 11.2
 2. To tokenize and prepare the ChairinCotext dataset, please run 
    `transglot/notebooks/prepare_chairs_in_context_data.ipynb`
 ## Train
-
+### Transglot
 ```
 # You can select some options. 
 # pn: PointNet, pn2: PointNet++, pt: Point Transformer, pct: Point Cloud Transformer
@@ -36,15 +36,20 @@ python train.py embedding_dim=100 hidden_dim=256 attn_layers=1 num_heads=1 \
 pc_encoder_type=["pn", "pn2", "pt", "pct"] \
 batch_size=96 epochs=35 lr=1e-3 weight_decay=5e-3 
 ```
-
+### Baseline (Shapeglot)
+```
+python train_baseline.py
+```
 ## Test
+### Transglot
 `python test.py`
 
-I attached a checkpoint of trained model. The above command tests the uploaded model.
+I attached checkpoints of trained models. The above command tests the uploaded models.
 If you want to test your own trained model, you should edit a "sub_ver_dir" path in the test.py.
 For more details, please refer to comments in the test.py.
 
-trained model: embedding_dim=100, hidden_dim=256, attn_layers=1, num_heads=1, pc_encoder_type=pn
+trained model (head_1): embedding_dim=100, hidden_dim=256, attn_layers=1, num_heads=1, pc_encoder_type=pn
+trained model (head_8): num_heads=8. Others are the same with above.
 
 ## Visualize Attention Maps
 You can visualize attention maps of Transglot in the `visualization.ipynb`. In that, you can also test 
@@ -55,9 +60,9 @@ your own synthesized sentences. (only lowercase available.)
 ### Performance of architectures
 | Architecture | Test Acc (%) | Test Loss | Train Acc (%) |
 | ------------ | -------- | --------- | --------- |
-| Baseline     | __79.5__     | __0.6101__    | 91.5      |
+| Baseline     | __79.6__     | __0.5779__    | 91.5      |
 | head=1       | 78.0     | 0.6602    | 94.6      |
-| head=8       | 76.0     | 0.9272    | __95.4__      |
+| head=8       | 76.8     | 0.8412    | __95.4__      |
 
 As shown the table above, more capability of the architecture increased overfitting.
 ### Part segmentation from language

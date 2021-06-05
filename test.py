@@ -9,7 +9,8 @@ def main():
     outputs_top_dir = "./outputs"
 
     # if you want to test your own trained model, change this to your sub_dir e.g. "0529-14:32"
-    sub_ver_dir = "pretrained"
+    #sub_ver_dir = "head_1"
+    sub_ver_dir = "head_8"
 
     # find automatically best val_acc checkpoint in top-2
     best_acc = -1
