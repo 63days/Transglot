@@ -74,10 +74,10 @@ As shown the table above, more capability of the architecture increased overfitt
 ### Part segmentation from language
 | Given Word \ Part  | back | seat | leg | arm |
 | :--------: | ---  |----- | --- | --- |
-| back | 20.35 | 0.43  | 0.14  | 1.44  |
-| seat | 40.21 | 20.86 | 3.98  | 7.64  |
-| leg  | 1.35  | 1.49  | 14.93 | 0.83  |
-| arm  | 0.34  | 7.54  | 3.6   | 4.85  |
+| back | __20.35__ | 0.43  | 0.14  | 1.44  |
+| seat | __40.21__ | 20.86 | 3.98  | 7.64  |
+| leg  | 1.35  | 1.49  | __14.93__ | 0.83  |
+| arm  | 0.34  | 7.54  | 3.6   | __4.85__  |
 
 __mIOU(%) scores with the binarized attention map and the ground truth.__
 Each row and column indicates the name of the label inserted as input and an actual part area
